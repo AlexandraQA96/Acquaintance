@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка - Головкина Александра </title>
+    <Link rel="stylesheet" href="Стили";>
+     <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeaea;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            color: #333;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0.5em 0;
+            color: #555;
+        }
+        hr {
+            color: red;
+            background-color: red; /* Цвет фона (если нужно) */
+            height: 1px; /* Толщина линии */
+            border: none; /* Убираем стандартные границы */
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+            color: #555;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px 0;
+            width: 25%; /* Занимает всю ширину контейнера */
+            height: 300px; /* Установите желаемую высоту */
+            overflow: hidden; /* Скрывает переполнение */
+            opacity: 1;
+        }
+        .image-container img {
+            width: 100%; /* Заполняет всю ширину контейнера */
+            height: auto; /* Сохраняет пропорции */
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .image-container img.hover {
+            transform: scale(1.5); /* Увеличение при наведении */
+            opacity: 0; /* Скрывает изображение при наведении */
+        }
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Головкина Александра </h1>
+        <h2>QA Тестировщик</h2>
+        <h3>"QA тестировщик по призванию, строитель по необходимости."</h3>
+        <hr></hr>
+        <p> 
+        В свободное время вместе с мужем превращаю планы в реальность, создавая дом, где каждое окно — это тест на счастье.</p>
+        
+        <div class="image-container">
+            <img src="images/я.jpg" alt="Снимок 1" class="default" id="img1">
+            <img src="images/44.jpg" alt="Снимок 2" class="hover" id="img2">
+
+            <!-- Добавьте больше изображений по необходимости -->
+        </div>
+
+        <div class="contact-info">
+            Телефон: <strong>+7 953 333 77 68</strong>
+            Почта:<strong> holalexa@mail.ru</strong>
+        </div>
+
+        <div class="social-links">
+            <a href="https://hh.ru/">Резюме на HH.RU</a>
+            <a href="https://vk.com/holalexa/">VK</a>  
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector('.image-container');
+        const img1 = document.getElementById('img1');
+        const img2 = document.getElementById('img2');
+
+
+        container.addEventListener('mouseover', () => {
+            img1.classList.add('default');
+            img2.classList.remove('hover');
+
+        });
+
+        container.addEventListener('mouseout', () => {
+            img1.classList.remove('default');
+            img2.classList.add('hover');
+        });
+    
+    </script>
+</body>
+</html>

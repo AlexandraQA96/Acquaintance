@@ -1,0 +1,82 @@
+  <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeaea;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0.5em 0;
+            color: #333;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0.5em 0;
+            color: #555;
+        }
+        hr {
+            color: red;
+            background-color: red; /* Цвет фона (если нужно) */
+            height: 1px; /* Толщина линии */
+            border: none; /* Убираем стандартные границы */
+        }
+        h3 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+            color: #555;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px 0;
+            width: 25%; /* Занимает всю ширину контейнера */
+            height: 300px; /* Установите желаемую высоту */
+            overflow: hidden; /* Скрывает переполнение */
+            opacity: 1;
+        }
+        .image-container img {
+            width: 100%; /* Заполняет всю ширину контейнера */
+            height: auto; /* Сохраняет пропорции */
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .image-container img.hover {
+            transform: scale(1.5); /* Увеличение при наведении */
+            opacity: 0; /* Скрывает изображение при наведении */
+        }
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
